@@ -1,0 +1,31 @@
+What Does Each Code Snippet Do?)
+
+    Assume the following method call is in an overridden earnings method in a subclass:
+
+     super.earnings()
+
+    Assume that the following line of code appears before a method declaration:
+
+     @Override
+
+    Assume the following line of code appears as the first statement in a constructor’s body:
+
+     super(firstArgument, secondArgument);
+
+ANSWERS
+
+1. super.earnings()
+    This code snippet calls the earnings() method of the superclass from within an overridden earnings() method in a subclass. 
+    It allows the subclass to execute the implementation of the earnings() method defined in the superclass, in addition to 
+    any additional functionality or modifications implemented in the subclass.
+
+2. @Override
+    This annotation is used in Java to indicate that a method is being overridden from a superclass. 
+    When placed before a method declaration in a subclass, it ensures that the method signature matches a method in the superclass. 
+    If there is no matching method in the superclass, or if the signature does not match, a compilation error occurs.
+
+3. super(firstArgument, secondArgument);
+    This code snippet invokes a constructor of the superclass from within a constructor of the subclass. 
+    It is typically used to initialize the inherited members of the subclass using parameters passed to the constructor of the subclass. 
+    This line must appear as the first statement in the constructor's body, and it is used to explicitly call 
+    a constructor of the superclass with specific arguments.
